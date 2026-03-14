@@ -1,5 +1,14 @@
 class Solution:
     def search(self, nums: list[int], target: int) -> int:
+        """
+        Problem: Given a sorted array of integers and a target value, find the index of the target in the array.
+        If the target is not found, return -1.
+
+        How it works: This is a binary search algorithm. It uses two pointers, p1 (start) and p2 (end),
+        to repeatedly divide the search space in half. Calculate the middle index using integer division (// 2),
+        compare the middle element with the target, and adjust the pointers to narrow down the search until
+        the target is found or the search space is empty.
+        """
         p1 = 0
         p2 = len(nums) - 1
 
